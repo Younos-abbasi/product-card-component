@@ -99,7 +99,19 @@ main {
   font-family: var(--font-family);
   font-weight: var(--fw-bold);
   font-size: 0.9rem;
+  cursor: pointer;
 }
+
 .btn > img {
   margin-right: 10px;
+}
+@media (min-width: 600px) {
+  main {
+    width: 500px;
+    margin: 150px auto;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
