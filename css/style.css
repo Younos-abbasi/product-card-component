@@ -106,14 +106,21 @@ main {
   margin-right: 10px;
 }
 @media (min-width: 600px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   main {
-    width: 520px;
-    margin: 180px auto;
+    width: 600px;
   }
   .product {
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 450px;
+    height: 460px;
   }
   .product__image > img {
     display: none;
